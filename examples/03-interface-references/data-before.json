@@ -1,0 +1,20 @@
+{
+  "catalog": [
+    {
+      "__typename": "Song",
+      "id": "song-1",
+      "title": "Northern Lights",
+      "artist": "The Signals"
+    },
+    {
+      "__typename": "Podcast",
+      "id": "podcast-1",
+      "title": "The Schema",
+      "showName": "Graph Talk"
+    }
+  ],
+  "playlistIds": [
+    "song-1",
+    "podcast-1"
+  ]
+}

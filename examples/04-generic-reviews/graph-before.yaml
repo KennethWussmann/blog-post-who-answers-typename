@@ -1,0 +1,14 @@
+version: 1
+subgraphs:
+  - name: playlists
+    routing_url: http://127.0.0.1:4101/graphql
+    schema:
+      file: playlists/schema.graphql
+  - name: catalog
+    routing_url: http://127.0.0.1:4102/graphql
+    schema:
+      file: catalog/schema-before.graphql
+  - name: reviews
+    routing_url: http://127.0.0.1:4103/graphql
+    schema:
+      file: reviews/schema.graphql

@@ -1,0 +1,11 @@
+query MixedPlaylist {
+  playlist(id: "mixed") {
+    name
+    items {
+      __typename
+      id
+      title
+    }
+  }
+  sanity
+}

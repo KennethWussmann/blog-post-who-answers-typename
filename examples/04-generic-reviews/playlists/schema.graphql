@@ -1,0 +1,15 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.7", import: ["@key", "@interfaceObject"])
+
+type MediaItem @key(fields: "id", resolvable: false) @interfaceObject {
+  id: ID!
+}
+
+type Playlist @key(fields: "id") {
+  id: ID!
+  name: String!
+  items: [MediaItem!]!
+}
+
+type Query {
+  playlist(id: ID!): Playlist
+}

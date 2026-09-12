@@ -1,0 +1,27 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.7", import: ["@key"])
+
+interface MediaItem @key(fields: "id") {
+  id: ID!
+  title: String!
+}
+
+type Song implements MediaItem @key(fields: "id") {
+  id: ID!
+  title: String!
+  artist: String!
+}
+
+type Podcast implements MediaItem @key(fields: "id") {
+  id: ID!
+  title: String!
+  showName: String!
+}
+
+type Audiobook implements MediaItem @key(fields: "id") {
+  id: ID!
+  title: String!
+}
+
+type Query {
+  mediaItem(id: ID!): MediaItem
+}

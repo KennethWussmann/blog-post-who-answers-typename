@@ -1,0 +1,32 @@
+{
+  "name": "who-answers-typename",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.14.1"
+  },
+  "config": {
+    "cosmoVersion": "0.346.1",
+    "cosmoSha256": "10c63736dc4aa4577277c1989502290572d4bec3a770caf465d5e3824a26e483"
+  },
+  "scripts": {
+    "setup": "node scripts/download.mjs",
+    "query": "node scripts/query.mjs",
+    "test": "npm run test:01-unknown-type && npm run test:02-nullable-items && npm run test:03-interface-references && npm run test:04-generic-reviews",
+    "start:01-unknown-type": "npm run setup && node examples/01-unknown-type/start.mjs",
+    "test:01-unknown-type": "npm run setup && node examples/01-unknown-type/check.mjs",
+    "start:02-nullable-items": "npm run setup && node examples/02-nullable-items/start.mjs",
+    "test:02-nullable-items": "npm run setup && node examples/02-nullable-items/check.mjs",
+    "start:03-interface-references": "npm run setup && node examples/03-interface-references/start.mjs",
+    "test:03-interface-references": "npm run setup && node examples/03-interface-references/check.mjs",
+    "start:04-generic-reviews": "npm run setup && node examples/04-generic-reviews/start.mjs",
+    "test:04-generic-reviews": "npm run setup && node examples/04-generic-reviews/check.mjs"
+  },
+  "dependencies": {
+    "@apollo/subgraph": "2.15.0",
+    "graphql": "16.14.2",
+    "graphql-yoga": "5.23.0",
+    "wgc": "0.130.4"
+  }
+}

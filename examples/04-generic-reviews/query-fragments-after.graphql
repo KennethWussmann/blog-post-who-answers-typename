@@ -1,0 +1,25 @@
+query ConcreteFragments {
+  playlist(id: "mixed") {
+    name
+    items {
+      __typename
+      id
+      title
+      ... on Song {
+        artist
+      }
+      ... on Song {
+        averageRating
+        reviewCount
+      }
+      ... on Podcast {
+        averageRating
+        reviewCount
+      }
+      ... on Audiobook {
+        averageRating
+        reviewCount
+      }
+    }
+  }
+}

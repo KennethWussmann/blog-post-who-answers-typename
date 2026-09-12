@@ -1,0 +1,40 @@
+{
+  "catalog": [
+    {
+      "__typename": "Song",
+      "id": "song-1",
+      "title": "Northern Lights",
+      "artist": "The Signals"
+    },
+    {
+      "__typename": "Podcast",
+      "id": "podcast-1",
+      "title": "The Schema",
+      "showName": "Graph Talk"
+    },
+    {
+      "__typename": "Audiobook",
+      "id": "audiobook-1",
+      "title": "The Long Way Home"
+    }
+  ],
+  "playlistIds": [
+    "song-1",
+    "podcast-1",
+    "audiobook-1"
+  ],
+  "ratings": {
+    "song-1": {
+      "averageRating": 4.5,
+      "reviewCount": 2
+    },
+    "podcast-1": {
+      "averageRating": 4,
+      "reviewCount": 3
+    },
+    "audiobook-1": {
+      "averageRating": 5,
+      "reviewCount": 1
+    }
+  }
+}

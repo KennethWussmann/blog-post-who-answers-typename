@@ -1,0 +1,23 @@
+version: "1"
+listen_addr: 127.0.0.1:4100
+dev_mode: true
+router_registration: false
+playground:
+  enabled: false
+introspection:
+  enabled: true
+shutdown_delay: 15s
+grace_period: 1s
+graphql_metrics:
+  enabled: false
+telemetry:
+  tracing:
+    enabled: false
+  metrics:
+    otlp:
+      enabled: false
+    prometheus:
+      enabled: false
+execution_config:
+  file:
+    path: .generated/03-interface-references/execution-config.json

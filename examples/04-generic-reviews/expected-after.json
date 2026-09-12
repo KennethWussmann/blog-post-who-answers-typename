@@ -1,0 +1,31 @@
+{
+  "data": {
+    "playlist": {
+      "name": "Commute",
+      "items": [
+        {
+          "__typename": "Song",
+          "id": "song-1",
+          "title": "Northern Lights",
+          "averageRating": 4.5,
+          "reviewCount": 2,
+          "artist": "The Signals"
+        },
+        {
+          "__typename": "Podcast",
+          "id": "podcast-1",
+          "title": "The Schema",
+          "averageRating": 4,
+          "reviewCount": 3
+        },
+        {
+          "__typename": "Audiobook",
+          "id": "audiobook-1",
+          "title": "The Long Way Home",
+          "averageRating": 5,
+          "reviewCount": 1
+        }
+      ]
+    }
+  }
+}

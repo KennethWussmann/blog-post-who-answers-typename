@@ -1,0 +1,15 @@
+query Playlist {
+  playlist(id: "mixed") {
+    name
+    items {
+      __typename
+      id
+      title
+      averageRating
+      reviewCount
+      ... on Song {
+        artist
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query KnownPlaylist {
+  playlist(id: "known") {
+    name
+    items {
+      __typename
+      id
+      title
+    }
+  }
+}
